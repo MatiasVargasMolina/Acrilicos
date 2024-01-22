@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:digitalocean": "npm install --production=false && npm run build"
+  },
+  "engines": {
+    "npm": "~10.3.0",
+    "node": "20.9.0"
   },
   "dependencies": {
     "flowbite-react": "^0.7.2",
